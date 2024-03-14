@@ -1,4 +1,3 @@
-
 /* cards css */
 .card-container {
   display: flex;
@@ -54,15 +53,23 @@
   text-align: center;
   text-decoration: none;
   font-size: 11px;
-  font-weight: 900;
+  line-height: 18px;
+  font-weight: 600;
   color: #0b0742;
-  margin-left: 200px;
+  border-radius: 20%;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 3px 10px;
+  border-radius: 45%;
 }
 .card-link:hover {
-  padding: 13px;
-  background-color: rgba(133, 128, 128, 0.786);
+  /* padding: 13px; */
+  background-color: rgb(209, 209, 220);
   color: #0b0742;
-  border-radius: 14px;
+  font-weight: 900;
+  /* color: white; */
+  /* border-radius: 14px; */
 }
 @keyframes card-animation {
   0% {
@@ -89,6 +96,10 @@
 }
 .card-text {
   animation: card-animation-text 1s ease-in-out forwards;
+  /* background-color: rgba(0, 0, 0, 0.084); */
+  background-color: rgba(11, 7, 66, 0.089);
+  text-shadow: 0.1px -0.1px 4px white;
+  padding: 10px;
 }
 
 /* dark css */
@@ -118,5 +129,7 @@ body.dark {
   }
   .card-text {
     color: rgb(9, 211, 168);
+    background-color: rgba(146, 141, 180, 0.089);
+    text-shadow: 0.1px -0.1px 4px black;
   }
 }

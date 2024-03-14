@@ -107,7 +107,8 @@
   border-radius: 0px 40px 0 0px;
 }
 #speBox_child3 {
-  border-radius: 0px 0px 0 40px;
+  /* border: 2px solid red; */
+  border-radius: 0px 40px 0px 40px;
 }
 
 .speBox_child .spe_heading {
