@@ -1,0 +1,56 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+:root {
+  --body-color: #b0bde3;
+  --nav-color: #0b0742;
+  --primary: #120c6e;
+  --secondary: #5e72eb;
+  --action: #ff9190;
+  --highlights: #fdc094;
+  --text-Bcolor: black;
+  --text-Wcolor: white;
+  --heading1: 40px;
+  --headingColor: rgb(63, 81, 181);
+  /* --headingColor: rgb(15, 77, 107); */
+
+  /* dark mood */
+}
+
+body {
+  height: 100vh;
+  background-color: var(--body-color);
+}
+
+/* <!-- ===== V Check ===== --> */
+.vCheak {
+  /* margin-top: 120px; */
+  /* border: 2px solid red; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <!-- ===== Dark CSS ===== --> */
+body.dark {
+  --body-color: #18191a;
+  --nav-color: #292d3e;
+  --darkText-color: rgb(217, 217, 217);
+  --SdarkText-color: rgb(163, 163, 163);
+  --dark_heading1: rgb(9, 211, 168);
+
+  color: var(--highlights);
+ 
+  /* <!-- ===== Footer section ===== --> */
+  .footer_lLine {
+    background-color: var(--dark_heading1);
+  }
+}

@@ -1,0 +1,208 @@
+#main_playlist {
+  /* border: 2px solid violet; */
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+#main_playlist h1 {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  font-size: var(--heading1);
+  line-height: 65px;
+  text-align: center;
+  /* margin-bottom: 10px; */
+}
+
+#playlist {
+  /* border: 2px solid yellow; */
+  /* height: 500px;    */
+  display: flex;
+  padding: 0px 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-x: hidden;
+  transform: scale(1);
+  width: 95vw;
+  margin: auto;
+  border-radius: 50px 0 50px 0;
+}
+
+#playlist #playcards {
+  display: flex;
+  /* border: 2px solid blue; */
+  animation: animePlaylist 22s ease infinite;
+}
+
+@keyframes animePlaylist {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(-250px);
+  }
+
+  50% {
+    transform: translateX(-500px);
+  }
+
+  75% {
+    transform: translateX(-250px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* common CSS of the Playlist and Resourse cards */
+
+#resource .card,
+#playcards .playcard {
+  margin: 10px;
+  background-color: #fff;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  height: 350px;
+  cursor: pointer;
+}
+
+#resource .card:hover,
+#playlist .playcard:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.card__img {
+  /* width: 100%; */
+  /* border: 2px solid yellow; */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  /* height: 46%; */
+  height: 170px;
+}
+
+.card__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card__info {
+  z-index: 2;
+  /* background-color: #fff; */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+  /* font-family: 'Raleway', sans-serif; */
+
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  /* font-family: 'Roboto Slab', serif; */
+}
+
+.card__by {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.card__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ad7d52;
+}
+
+/* common CSS of Resourse cards */
+
+#resource {
+  /* border: 2px solid red; */
+  background-color: rgba(0, 0, 0, 0.128);
+}
+
+#resource #cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
+}
+
+#resource .searchBox {
+  /* border: 2px solid red; */
+  padding: 0px 10px;
+  padding-top: 16px;
+  background-color: rgba(231, 218, 218, 0);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* #resource .searchBox span {
+  border-radius: 2px solid red;
+  background: yellow;
+  height: 22px;
+} */
+
+#resource .searchBox #re_search {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  border-left: 3px solid rgba(11, 7, 66, 0.589);
+  border-top: 3px solid rgba(11, 7, 66, 0.589);
+  font-size: 16px;
+  background: rgba(213, 212, 223, 0.347);
+  color: white;
+}
+#resource .searchBox #re_search::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+#resource .re_lastBox {
+  height: 20px;
+  /* background-color: blue; */
+}
+
+body.dark {
+  --body-color: #18191a;
+  --nav-color: #292d3e;
+  --darkText-color: rgb(217, 217, 217);
+  --SdarkText-color: rgb(163, 163, 163);
+  --dark_heading1: rgb(9, 211, 168);
+
+  color: var(--highlights);
+
+  /* <!-- ===== PlayList section ===== --> */
+
+  #resource .card,
+  #playcards .playcard {
+    background-color: var(--nav-color);
+    color: var(--darkText-color);
+  }
+
+  .card__by a {
+    color: var(--dark_heading1);
+  }
+
+  #resource .searchBox #re_search {
+    background-color: var(--nav-color);
+    border-left: 1px solid var(--dark_heading1);
+    border-top: 1px solid var(--dark_heading1);
+  }
+}

@@ -1,0 +1,105 @@
+/*  <!-- ===== Navbar ===== --> */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: var(--nav-color);
+  z-index: 99;
+}
+
+nav .nav-bar {
+  /* position: relative; */
+  height: 100%;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: var(--nav-color); */
+  margin: 0 auto;
+  padding: 0 30px;
+  /* border: 2px solid red; */
+}
+
+nav .nav-bar .logo a {
+  text-decoration: none;
+  color: var(--highlights);
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.nav-bar .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.nav-bar .nav-links li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.nav-links li a {
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-Wcolor);
+  text-decoration: none;
+  padding: 10px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 1px;
+  width: 90%;
+  /* height: 6px; */
+  /* width: 6px; */
+  /* border-radius: 50%; */
+  transform: translateX(-50%);
+  background-color: var(--text-Wcolor);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.nav-links li:hover a::before {
+  opacity: 1;
+}
+
+.darkLight-searchBox {
+  /* background-color: yellow; */
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.darkLight-searchBox:hover {
+  border: 0.1px solid rgba(255, 255, 255, 0.237);
+}
+
+body.dark {
+  nav .nav-bar .logo a {
+    text-decoration: none;
+    color: var(--dark_heading1);
+  }
+
+  .darkLight-searchBox:hover {
+    border: 13px solid rgba(255, 255, 0, 0.388);
+    border: 13px solid rgba(253, 249, 24, 0.484);
+  }
+
+  nav .nav-bar .dark-light span i {
+    /* color: black; */
+    transform: rotate(180deg);
+  }
+}

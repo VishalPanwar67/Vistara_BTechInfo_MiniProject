@@ -1,0 +1,45 @@
+/* <!-- ===== slider ===== --> */
+.text {
+  color: #0b0742;
+  text-align: center;
+}
+.carousel-inner img {
+  image-rendering: pixelated;
+}
+.slider {
+  margin-top: 50px;
+}
+.slider_textTran {
+  color: #f5f4ff;
+  text-shadow: 2px 2px 20px #0b0742;
+  transform: translateY(-20px);
+}
+
+@keyframes flauntText {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.carousel-caption d-none d-md-block h4,
+h5 {
+  animation: flauntText 1.5s ease-in-out forwards;
+}
+@keyframes flauntanimation {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.carousel-caption d-none d-md-block h5,
+h4 {
+  animation: flauntText 1.5s ease-in-out forwards;
+}

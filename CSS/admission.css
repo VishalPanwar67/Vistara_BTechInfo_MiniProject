@@ -1,0 +1,112 @@
+.admission_main {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  border-radius: 40px 0px 40px 0px;
+  background-color: white;
+}
+.admission_main > h1 {
+  color: var(--headingColor);
+  margin-bottom: 10px;
+  /* text-shadow: 2px 2px 1px var(--primary);    */
+  font-size: var(--heading1);
+}
+
+.admission_box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  padding: 40px 20px;
+  margin-bottom: 50px;
+  box-shadow: 0 14px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--body-color);
+  border-radius: 0 40px 0 40px;
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.admission_box:hover {
+  opacity: 1;
+}
+
+.admission_box_active {
+  opacity: 1;
+  /* background-color: red; */
+}
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 5px solid #3273dc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 350px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+.card li::before {
+  content: "✔";
+  margin-right: 0.5em;
+  color: #32cd32;
+}
+
+.card:hover {
+  border-left: 5px solid #23d160;
+  z-index: 2;
+  /* transform: translateY(-5px); */
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .process-step {
+    width: auto;
+    padding: 10px;
+  }
+
+  .step {
+    padding: 10px;
+  }
+}
+
+body.dark {
+  /* <!-- ===== Admission section ===== --> */
+  .admission_main,
+  .card h2 {
+    background-color: var(--nav-color);
+    color: var(--darkText-color);
+  }
+
+  .admission_main > h1 {
+    color: var(--dark_heading1);
+  }
+  .card {
+    background-color: var(--nav-color);
+    border-left: 5px solid #3273dc;
+  }
+  .card:hover {
+    border-left: 5px solid rgb(9, 211, 172);
+  }
+  .card p {
+    color: var(--SdarkText-color);
+  }
+}
