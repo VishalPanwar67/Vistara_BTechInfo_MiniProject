@@ -1,0 +1,122 @@
+
+/* cards css */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 460px;
+  background-color: #fff;
+  border: 0px solid #fff;
+  border-radius: 0px 0px 0px 28px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+.card-image {
+  width: 300px;
+  height: 200px;
+}
+.card-text {
+  text-align: center;
+  color: #0b0742;
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-content {
+  text-align: center;
+  color: #0b0742;
+  font-weight: 800;
+}
+.card-info {
+  font-size: 12px;
+  list-style: none;
+  color: #0b0742;
+  margin: 0px 10px 0px 10px;
+}
+.card-link {
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 900;
+  color: #0b0742;
+  margin-left: 200px;
+}
+.card-link:hover {
+  padding: 13px;
+  background-color: rgba(133, 128, 128, 0.786);
+  color: #0b0742;
+  border-radius: 14px;
+}
+@keyframes card-animation {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.card {
+  animation: card-animation 1s ease-in-out forwards;
+}
+@keyframes card-animation-text {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.card-text {
+  animation: card-animation-text 1s ease-in-out forwards;
+}
+
+/* dark css */
+body.dark {
+  --body-color: #18191a;
+  --nav-color: #292d3e;
+  --darkText-color: rgb(217, 217, 217);
+  --SdarkText-color: rgb(163, 163, 163);
+  --dark_heading1: rgb(9, 211, 168);
+
+  color: var(--highlights);
+
+  .card {
+    background-color: #292d3e;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .card-content {
+    color: white;
+  }
+  .card-info {
+    color: rgb(146, 144, 144);
+  }
+  .card-link {
+    color: rgb(9, 211, 168);
+  }
+  .card-text {
+    color: rgb(9, 211, 168);
+  }
+}
