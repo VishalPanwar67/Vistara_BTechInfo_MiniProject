@@ -48,7 +48,7 @@ body.dark {
   --dark_heading1: rgb(9, 211, 168);
 
   color: var(--highlights);
- 
+
   /* <!-- ===== Footer section ===== --> */
   .footer_lLine {
     background-color: var(--dark_heading1);

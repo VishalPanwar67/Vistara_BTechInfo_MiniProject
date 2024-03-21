@@ -5,14 +5,17 @@
 }
 .carousel-inner img {
   image-rendering: pixelated;
+  height: 110vh;
+  width: 100%;
+  object-fit: cover;
 }
 .slider {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .slider_textTran {
   color: #f5f4ff;
   text-shadow: 2px 2px 20px #0b0742;
-  transform: translateY(-20px);
+  transform: translateY(-85px);
 }
 
 @keyframes flauntText {
