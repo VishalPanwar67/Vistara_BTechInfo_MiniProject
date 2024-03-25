@@ -193,7 +193,7 @@ footer .footer_fLine {
     padding: 10px;
     font-size: 16px;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: baseline;
     /* border: 2px solid red; */
   }
 
@@ -219,7 +219,7 @@ footer .footer_fLine {
     padding: 10px;
     font-size: 16px;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: baseline;
     /* border: 2px solid red; */
   }
 
