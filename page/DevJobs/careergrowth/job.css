@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#job {
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 15vh;
+}
+#job a {
+  text-decoration: none;
+  color: black;
+}
+
+#job h2 {
+  font-size: 28px;
+  /* line-height: 38px; */
+  margin: 0;
+  border-bottom: 1px solid var(--dark_heading1);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  padding: 10px;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.box div {
+  width: 220vw;
+  /* border: 2px solid green; */
+  height: 60px;
+  padding: 0px 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: calc(0);
+  margin: 2px 0px;
+}
+
+.box_child1 {
+  animation: boxdivAnn1 20s linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  transform: translate(-20vw);
+}
+
+@keyframes boxdivAnn1 {
+  0% {
+    transform: translate(-20vw);
+  }
+
+  100% {
+    transform: translate(-80vw);
+  }
+}
+
+.box_child2 {
+  animation: boxdivAnn2 20s linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  transform: translate(-70vw);
+}
+
+@keyframes boxdivAnn2 {
+  0% {
+    transform: translate(-70vw);
+  }
+
+  100% {
+    transform: translate(-15vw);
+  }
+}
+
+.btn {
+  background-color: rgb(218, 203, 177);
+  border-radius: 20px 0 20px 0;
+  box-shadow: 0 0 10px rgb(104, 134, 218);
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 5px 15px;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  overflow: hidden;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn p {
+  margin: 0;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 300px;
+  margin-top: 0px;
+  background: linear-gradient(#00ccff, #d400d4);
+}
+
+.btn_amm1::before {
+  animation: amm1 8s linear infinite;
+}
+
+@keyframes amm1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn_amm2::before {
+  animation: amm2 16s linear infinite;
+}
+
+@keyframes amm2 {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn_amm3::before {
+  animation: amm3 8s linear infinite;
+}
+
+@keyframes amm3 {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background-color: rgb(218, 203, 177);
+  border-radius: 20px 0 20px 0;
+}
+
+.text-button {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.box:hover .box_child1,
+.box:hover .box_child2 {
+  animation-play-state: paused;
+}

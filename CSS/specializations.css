@@ -152,6 +152,7 @@
   text-align: center;
   /* background-color: red; */
   opacity: 0;
+  display: none;
   font-weight: bolder;
 }
 
@@ -185,7 +186,7 @@
 }
 
 .spe_btn a span:nth-child(1) {
-  top: -7px;
+  top: -10px;
   left: -100%;
   width: 100%;
   height: 2px;
@@ -200,12 +201,12 @@
 
   50%,
   100% {
-    left: 100%;
+    left: 110%;
   }
 }
 
 .spe_btn a span:nth-child(3) {
-  bottom: 0;
+  bottom: 1px;
   right: -100%;
   width: 100%;
   height: 2px;
@@ -227,6 +228,7 @@
 
 .speBox_child .spe_btn_active {
   opacity: 1;
+  display: block;
 }
 
 .btn {

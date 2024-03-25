@@ -28,8 +28,12 @@ thik he */
   flex-direction: column;
   gap: 10px;
   margin: 20px;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   padding: 20px;
+  border: 0.2px solid rgba(0, 0, 0, 0.126);
+  transition: all 0.5s;
+}
+.chart_innerBox:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .bar {
@@ -143,7 +147,7 @@ thik he */
 .container {
   animation: flauntanimationcard 1s ease-in-out forwards;
   /* border: 2px solid red; */
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 .company-names h2 {
   text-align: center;
@@ -233,17 +237,11 @@ body.dark {
     color: var(--dark_heading1);
   }
   .bar {
-    width: var(--percentage);
     background-color: #292d3e;
     color: #fdc094;
-    padding: 10px;
-    border-radius: 5px;
-    transition: width 0.5s ease;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    font-size: 18px;
-    font-weight: 200;
   }
   .bar:hover {
     background-color: rgba(245, 245, 245, 0.684);

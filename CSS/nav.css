@@ -8,6 +8,7 @@ nav {
   width: 100%;
   background-color: var(--nav-color);
   z-index: 99;
+  font-family: Poppins, sans-serif;
 }
 
 nav .nav-bar {
@@ -74,6 +75,7 @@ nav .nav-bar .logo a {
 }
 
 .darkLight-searchBox {
+  --darkText-color: rgb(217, 217, 217);
   /* background-color: yellow; */
   height: 35px;
   width: 35px;

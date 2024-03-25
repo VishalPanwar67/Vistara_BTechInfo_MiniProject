@@ -14,24 +14,18 @@ const speBtn2 = document.querySelector("#spe_btn2");
 const speBtn3 = document.querySelector("#spe_btn3");
 const speBtn4 = document.querySelector("#spe_btn4");
 
-// var h3 = document.getElementsByClassName('spe_heading');
+const btn = document.querySelector("#btn_close");
 
-var headings = document.getElementsByClassName('spe_heading');
+let headings = document.getElementsByClassName('spe_heading');
 
-
-// Change the color of the headings
-
-// console.log(h3);
 
 function speAniAdd1() {
     speBoxChild1.classList.add("spa_active1");
     spePera1.classList.add("spe_pera_active");
     speBtn1.classList.add("spe_btn_active");
+    btn.style.visibility = 'visible';
 
-    // h3.style.color = 'rgb(255, 255, 255)';
-
-    // Change the color of the headings
-    for (var i = 0; i < headings.length; i++) {
+    for (let i = 0; i < headings.length; i++) {
         headings[i].style.color = 'rgb(137, 207, 240)'; // This is the RGB value for Baby Blue
     }
 
@@ -41,8 +35,10 @@ function speAniAdd2() {
     speBoxChild2.classList.add("spa_active2");
     spePera2.classList.add("spe_pera_active");
     speBtn2.classList.add("spe_btn_active");
-    for (var i = 0; i < headings.length; i++) {
-        headings[i].style.color = 'rgb(137, 207, 240)'; // This is the RGB value for Baby Blue
+    btn.style.visibility = 'visible';
+
+    for (let i = 0; i < headings.length; i++) {
+        headings[i].style.color = 'rgb(137, 207, 240)';
     }
     // console.log(e);
 }
@@ -50,19 +46,23 @@ function speAniAdd3() {
     speBoxChild3.classList.add("spa_active3");
     spePera3.classList.add("spe_pera_active");
     speBtn3.classList.add("spe_btn_active");
-    for (var i = 0; i < headings.length; i++) {
+    btn.style.visibility = 'visible';
+
+    for (let i = 0; i < headings.length; i++) {
         headings[i].style.color = 'rgb(137, 207, 240)'; // This is the RGB value for Baby Blue
     }
-    // console.log(e);
+
 }
 function speAniAdd4() {
     speBoxChild4.classList.add("spa_active4");
     spePera4.classList.add("spe_pera_active");
     speBtn4.classList.add("spe_btn_active");
-    for (var i = 0; i < headings.length; i++) {
+    btn.style.visibility = 'visible';
+
+    for (let i = 0; i < headings.length; i++) {
         headings[i].style.color = 'rgb(137, 207, 240)'; // This is the RGB value for Baby Blue
     }
-    // console.log(e);
+
 }
 
 function speRemove() {
@@ -84,7 +84,9 @@ function speRemove() {
     spePera4.classList.remove("spe_pera_active");
     speBtn4.classList.remove("spe_btn_active");
 
-    for (var i = 0; i < headings.length; i++) {
+    btn.style.visibility = 'hidden';
+
+    for (let i = 0; i < headings.length; i++) {
         headings[i].style.color = 'rgb(40, 40, 255)'; // This is the RGB value for Baby Blue
     }
 

@@ -132,6 +132,27 @@
 #resource {
   /* border: 2px solid red; */
   background-color: rgba(0, 0, 0, 0.128);
+  height: 145vh;
+  overflow: scroll;
+}
+
+#resource::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Handle */
+#resource::-webkit-scrollbar-thumb {
+  background: rgb(88, 108, 169);
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(0deg, #ffd89d, #ff9900);
+  animation: btn-anim1 1s linear infinite;
+}
+
+/* Handle on hover */
+#resource::-webkit-scrollbar-thumb:hover {
+  border-radius: 10px;
+  background: linear-gradient(0deg, #ff9900, #ffd494);
 }
 
 #resource #cards {
@@ -149,6 +170,7 @@
   background-color: rgba(231, 218, 218, 0);
   position: sticky;
   top: 0;
+  /* border: 2px solid red; */
   z-index: 100;
 }
 

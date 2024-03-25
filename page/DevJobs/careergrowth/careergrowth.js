@@ -20,20 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const dragging = (e) => {
         if (!isDragging) return;
-
-
         const newScrollLeft = startScrollLeft - (e.pageX - startX);
-
-
         if (newScrollLeft <= 0 || newScrollLeft >=
-            carousel.scrollWidth - carousel.offsetWidth) {
-
-
+            carousel.scrollWidth - carousel.offsetidth) {
             isDragging = false;
             return;
         }
-
-
         carousel.scrollLeft = newScrollLeft;
     };
 
@@ -43,20 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const autoPlay = () => {
-
-
         if (window.innerWidth < 800) return;
-
-
         const totalCardWidth = carousel.scrollWidth;
-
-
         const maxScrollLeft = totalCardWidth - carousel.offsetWidth;
-
-
         if (carousel.scrollLeft >= maxScrollLeft) return;
-
-
         timeoutId = setTimeout(() =>
             carousel.scrollLeft += firstCardWidth, 2500);
     };
@@ -67,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
     wrapper.addEventListener("mouseenter", () =>
         clearTimeout(timeoutId));
     wrapper.addEventListener("mouseleave", autoPlay);
-
 
     arrowBtns.forEach(btn => {
         btn.addEventListener("click", () => {
