@@ -1,5 +1,4 @@
 #main_playlist {
-  /* border: 2px solid violet; */
   margin-top: 70px;
   margin-bottom: 10px;
 }
@@ -10,12 +9,9 @@
   font-size: var(--heading1);
   line-height: 65px;
   text-align: center;
-  /* margin-bottom: 10px; */
 }
 
 #playlist {
-  /* border: 2px solid yellow; */
-  /* height: 500px;    */
   display: flex;
   padding: 0px 20px;
   scroll-behavior: smooth;
@@ -29,8 +25,9 @@
 
 #playlist #playcards {
   display: flex;
-  /* border: 2px solid blue; */
   animation: animePlaylist 22s ease infinite;
+
+  /* background-color: red; */
 }
 
 @keyframes animePlaylist {
@@ -55,6 +52,9 @@
   }
 }
 
+#playlist:hover #playcards {
+  animation-play-state: paused;
+}
 /* common CSS of the Playlist and Resourse cards */
 
 #resource .card,

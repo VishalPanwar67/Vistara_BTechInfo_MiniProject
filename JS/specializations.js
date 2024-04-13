@@ -2,7 +2,6 @@ const speBoxChild1 = document.querySelector("#speBox_child1");
 const speBoxChild2 = document.querySelector("#speBox_child2");
 const speBoxChild3 = document.querySelector("#speBox_child3");
 const speBoxChild4 = document.querySelector("#speBox_child4");
-//   console.log(speBoxChild1);
 const spePera1 = document.querySelector("#spe_pera1");
 const spePera2 = document.querySelector("#spe_pera2");
 const spePera3 = document.querySelector("#spe_pera3");
@@ -26,9 +25,8 @@ function speAniAdd1() {
     btn.style.visibility = 'visible';
 
     for (let i = 0; i < headings.length; i++) {
-        headings[i].style.color = 'rgb(137, 207, 240)'; // This is the RGB value for Baby Blue
+        headings[i].style.color = 'rgb(137, 207, 240)'; 
     }
-
     // console.log(e);
 }
 function speAniAdd2() {

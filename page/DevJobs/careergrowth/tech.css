@@ -1,0 +1,178 @@
+#main_techlist {
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+#main_techlist h1 {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  font-size: var(--heading1);
+  line-height: 65px;
+  text-align: center;
+}
+
+#techlist {
+  display: flex;
+  padding: 0px 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  /* overflow-x: hidden; */
+  overflow-x: scroll;
+  transform: scale(1);
+  width: 95vw;
+  margin: auto;
+  border-radius: 50px 0 50px 0;
+}
+
+#techlist::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Handle */
+#techlist::-webkit-scrollbar-thumb {
+  background: rgb(88, 108, 169);
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(
+    to left,
+    #0b0742,
+    #b37f7f,
+    #96a3ca,
+    #b37f7f,
+    #0b0742
+  );
+  animation: btn-anim1 1s linear infinite;
+}
+
+/* Handle on hover */
+#techlist::-webkit-scrollbar-thumb:hover {
+  border-radius: 10px;
+  background: linear-gradient(
+    to left,
+    #96a3ca,
+    #b37f7f,
+    #0b0742,
+    #b37f7f,
+    #96a3ca
+  );
+}
+
+#techlist #techcards {
+  display: flex;
+  /* animation: animePlaylist 60s ease infinite; */
+  /* border: 2px solid red; */
+}
+
+@keyframes animePlaylist {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(-1575px);
+  }
+
+  50% {
+    transform: translateX(-3150px);
+  }
+
+  75% {
+    transform: translateX(-1575px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+#techlist:hover #techcards {
+  animation-play-state: paused;
+}
+#techcards .techcard {
+  margin: 10px;
+  background-color: #fff;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  /* text-transform: uppercase; */
+  height: 350px;
+  cursor: pointer;
+}
+
+#techlist .techcard:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.card__img {
+  /* width: 100%; */
+  /* border: 2px solid yellow; */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  /* height: 46%; */
+  height: 170px;
+}
+
+.card__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card__info {
+  z-index: 2;
+  /* background-color: #fff; */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+  /* font-family: 'Raleway', sans-serif; */
+
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  /* font-family: 'Roboto Slab', serif; */
+}
+
+.card__by {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.card__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ad7d52;
+}
+
+body.dark {
+  --body-color: #18191a;
+  --nav-color: #292d3e;
+  --darkText-color: rgb(217, 217, 217);
+  --SdarkText-color: rgb(163, 163, 163);
+  --dark_heading1: rgb(9, 211, 168);
+
+  color: var(--highlights);
+
+  /* <!-- ===== TechList section ===== --> */
+
+  #techcards .techcard {
+    background-color: var(--nav-color);
+    color: var(--darkText-color);
+  }
+
+  .card__by a {
+    color: var(--dark_heading1);
+  }
+}
