@@ -4,8 +4,7 @@
   text-align: center;
 }
 .carousel-inner img {
-  /* image-rendering: pixelated; */
-  height: 110vh;
+   height: 110vh;
   width: 100%;
   object-fit: cover;
 }

@@ -25,7 +25,7 @@ function speAniAdd1() {
     btn.style.visibility = 'visible';
 
     for (let i = 0; i < headings.length; i++) {
-        headings[i].style.color = 'rgb(137, 207, 240)'; 
+        headings[i].style.color = 'rgb(137, 207, 240)';
     }
     // console.log(e);
 }
@@ -64,7 +64,7 @@ function speAniAdd4() {
 }
 
 function speRemove() {
-    console.log("Krishna")
+    // console.log("Krishna")
     speBoxChild1.classList.remove('spa_active1');
     speBoxChild2.classList.remove('spa_active2');
     speBoxChild3.classList.remove('spa_active3');

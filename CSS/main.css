@@ -19,10 +19,7 @@
   --text-Wcolor: white;
   --heading1: 40px;
   --headingColor: rgb(63, 81, 181);
-  /* --headingColor: rgb(15, 77, 107); */
-
-  /* dark mood */
-}
+ }
 
 body {
   height: 100vh;
@@ -31,8 +28,6 @@ body {
 
 /* <!-- ===== V Check ===== --> */
 .vCheak {
-  /* margin-top: 120px; */
-  /* border: 2px solid red; */
   height: 100vh;
   display: flex;
   justify-content: center;

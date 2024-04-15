@@ -194,11 +194,9 @@ footer .footer_fLine {
     font-size: 16px;
     justify-content: space-evenly;
     align-items: baseline;
-    /* border: 2px solid red; */
   }
 
   .footer_cChild .footer_cInner3 {
-    /* border: 2px solid yellow; */
     padding: 5px 0px;
     text-align: left;
     height: 100%;
@@ -220,11 +218,9 @@ footer .footer_fLine {
     font-size: 16px;
     justify-content: space-evenly;
     align-items: baseline;
-    /* border: 2px solid red; */
   }
 
   .footer_cChild .footer_cInner3 {
-    /* border: 2px solid yellow; */
     padding: 0px 0px;
     text-align: left;
     height: 100%;
@@ -233,6 +229,5 @@ footer .footer_fLine {
 
   .footer_cInner3 h5 {
     font-size: 18px;
-    /* background-color: red; */
   }
 }

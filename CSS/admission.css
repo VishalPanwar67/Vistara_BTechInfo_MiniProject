@@ -5,15 +5,13 @@
   justify-content: center;
   padding: 20px 0px;
   flex-direction: column;
-  /* border: 2px solid red; */
-  border-radius: 40px 0px 40px 0px;
+   border-radius: 40px 0px 40px 0px;
   background-color: white;
 }
 .admission_main > h1 {
   color: var(--headingColor);
   margin-bottom: 10px;
-  /* text-shadow: 2px 2px 1px var(--primary);    */
-  font-size: var(--heading1);
+   font-size: var(--heading1);
 }
 
 .admission_box {
@@ -35,8 +33,7 @@
 
 .admission_box_active {
   opacity: 1;
-  /* background-color: red; */
-}
+ }
 .card {
   background: #ffffff;
   border-radius: 8px;
@@ -72,7 +69,6 @@
 .card:hover {
   border-left: 5px solid #23d160;
   z-index: 2;
-  /* transform: translateY(-5px); */
   transform: scale(1.1);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }

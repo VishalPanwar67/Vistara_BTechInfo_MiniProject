@@ -5,8 +5,6 @@
   min-height: 300px;
   justify-content: center;
   align-items: center;
-  /* font-family: arial; */
-  /* border: 2px solid red; */
   width: 60vw;
   margin: auto;
   margin-top: 15px;
@@ -141,15 +139,7 @@ body.dark {
   }
   .container .card:hover .face.face1 {
     transform: translateY(0);
-    /* box-shadow:
-      inset 0 0 60px whitesmoke,
-      inset 20px 0 80px rgb(188, 8, 188),
-      inset -20px 0 80px #0ff,
-      inset 20px 0 300px rgb(249, 80, 249),
-      inset -20px 0 300px #0ff,
-      0 0 50px #fff,
-      -10px 0 80px rgb(244, 82, 244),
-      10px 0 80px #0ff; */
+    
   }
   .container .card .face.face2 {
     background: rgba(132, 131, 131, 0.334);

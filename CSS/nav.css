@@ -12,17 +12,14 @@ nav {
 }
 
 nav .nav-bar {
-  /* position: relative; */
   height: 100%;
   max-width: 1000px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: var(--nav-color); */
   margin: 0 auto;
   padding: 0 30px;
-  /* border: 2px solid red; */
 }
 
 nav .nav-bar .logo a {
@@ -62,9 +59,6 @@ nav .nav-bar .logo a {
   bottom: 0;
   height: 1px;
   width: 90%;
-  /* height: 6px; */
-  /* width: 6px; */
-  /* border-radius: 50%; */
   transform: translateX(-50%);
   background-color: var(--text-Wcolor);
   opacity: 0;
@@ -76,7 +70,6 @@ nav .nav-bar .logo a {
 
 .darkLight-searchBox {
   --darkText-color: rgb(217, 217, 217);
-  /* background-color: yellow; */
   height: 35px;
   width: 35px;
   display: flex;
@@ -127,12 +120,10 @@ body.dark {
     display: flex;
     margin: 2px 0px;
     padding: 0;
-    /* border: 2px solid green; */
   }
 
   .nav-bar .nav-links li {
     align-items: center;
-    /* border: 2px solid yellow; */
   }
 
   .nav-links li a {
@@ -155,6 +146,5 @@ body.dark {
 
   .nav-bar .nav-links li {
     align-items: center;
-    /* border: 2px solid yellow; */
   }
 }

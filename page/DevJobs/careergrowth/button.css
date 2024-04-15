@@ -1,43 +1,35 @@
-.button
-{
-    padding: 24px;
-    width: 220px;
-    display: block;
-    margin: auto;
-    border-radius: 26px;
-    list-style: none;
-   
+.button {
+  padding: 24px;
+  width: 220px;
+  display: block;
+  margin: auto;
+  border-radius: 26px;
+  list-style: none;
 }
-.button a
-{
-    text-decoration: none;
-    color: #0b0742;
-    font-size: 23px;
-    font-weight: 900;
-   
-  
+.button a {
+  text-decoration: none;
+  color: #0b0742;
+  font-size: 23px;
+  font-weight: 900;
 }
-.button:hover
-{
-    background-color: rgba(216, 213, 213, 0.673);
-    border-radius: 26px;
+.button:hover {
+  background-color: rgba(216, 213, 213, 0.673);
+  border-radius: 26px;
 }
 body.dark {
-    --body-color: #18191a;
-    --nav-color: #292d3e;
-    --darkText-color: rgb(217, 217, 217);
-    --SdarkText-color: rgb(163, 163, 163);
-    --dark_heading1: rgb(9, 211, 168);
-  
-    color: var(--highlights);
-  
-    nav .nav-bar .logo a {
-      text-decoration: none;
-      color: var(--dark_heading1);
-    }
-   .button
-   {
-	color: rgb(9, 211, 168);
-	
-   }
+  --body-color: #18191a;
+  --nav-color: #292d3e;
+  --darkText-color: rgb(217, 217, 217);
+  --SdarkText-color: rgb(163, 163, 163);
+  --dark_heading1: rgb(9, 211, 168);
+
+  color: var(--highlights);
+
+  nav .nav-bar .logo a {
+    text-decoration: none;
+    color: var(--dark_heading1);
+  }
+  .button {
+    color: rgb(9, 211, 168);
+  }
 }
